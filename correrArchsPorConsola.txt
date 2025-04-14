@@ -1,0 +1,10 @@
+dotnet new console -n JugadoresApp 
+// crea carpeta con un program.cs en donde va el codigo a correr
+
+cd JugadoresApp // ir a la carpeta
+
+
+dotnet run // compila y corre
+
+
+dotnet run /workspaces/ejs-mauricio/jugador.cs // supuestamente hace todo de una sin crear la carpeta
