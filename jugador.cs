@@ -1,78 +1,127 @@
 using System;
 
-interface Jugador
+interface IJugador
 {
-    private string tipo;
+    bool correr(int minutos);
+    bool cansado();
+    void descansar(int minutos);
+}
+
+class JugadorAmateur : IJugador
+{
     private int minutosCorrer;
-    public Jugador(string tipo, int minutosCorrer)
-    {
-        this.tipo = tipo;
-        if(tipo == "Profesional")
-        {
-            this.minutosCorrer = 40;
-        }
-        else
-        {
-            this.minutosCorrer = 20;
-        }
-        
-    }
+    private const int MaxMinutos = 20;
 
-    
-    public bool cansado()
+    public JugadorAmateur()
     {
-        if (minutosCorrer == 0)
-        {
-            Console.WriteLine("El jugador esta cansado");
-            return true;
-        }
-        Console.WriteLine("El jugador no esta cansado");
-        return false;
-    }
-
-    public void descansar(int minutos)
-    {
-        Console.WriteLine("Descansando...");
-        minutosCorrer += minutos;
-        if (tipo == "Amateur" && minutosCorrer > 20)
-        {
-            minutosCorrer = 20;
-        }
-        else if (tipo == "Profesional" && minutosCorrer > 40)
-        {
-            minutosCorrer = 40;
-        }
+        minutosCorrer = MaxMinutos;
     }
 
     public bool correr(int minutos)
     {
         if (minutos > minutosCorrer)
         {
-            Console.WriteLine("El jugador llego a su limite, le faltaron correr" + minutos-minutosCorrer + " minutos");
+            Console.WriteLine($"El jugador amateur llegó a su límite, le faltaron correr {minutos - minutosCorrer} minutos.");
             minutosCorrer = 0;
             return false;
         }
         else
         {
             minutosCorrer -= minutos;
-            Console.WriteLine("Corriendo...");
+            Console.WriteLine("El jugador amateur está corriendo...");
             return true;
+        }
+    }
+
+    public bool cansado()
+    {
+        if (minutosCorrer == 0)
+        {
+            Console.WriteLine("El jugador amateur está cansado.");
+            return true;
+        }
+        Console.WriteLine("El jugador amateur no está cansado.");
+        return false;
+    }
+
+    public void descansar(int minutos)
+    {
+        Console.WriteLine("El jugador amateur está descansando...");
+        minutosCorrer += minutos;
+        if (minutosCorrer > MaxMinutos)
+        {
+            minutosCorrer = MaxMinutos;
         }
     }
 }
 
+class JugadorProfesional : IJugador
+{
+    private int minutosCorrer;
+    private const int MaxMinutos = 40;
+
+    public JugadorProfesional()
+    {
+        minutosCorrer = MaxMinutos;
+    }
+
+    public bool correr(int minutos)
+    {
+        if (minutos > minutosCorrer)
+        {
+            Console.WriteLine($"El jugador profesional llegó a su límite, le faltaron correr {minutos - minutosCorrer} minutos.");
+            minutosCorrer = 0;
+            return false;
+        }
+        else
+        {
+            minutosCorrer -= minutos;
+            Console.WriteLine("El jugador profesional está corriendo...");
+            return true;
+        }
+    }
+
+    public bool cansado()
+    {
+        if (minutosCorrer == 0)
+        {
+            Console.WriteLine("El jugador profesional está cansado.");
+            return true;
+        }
+        Console.WriteLine("El jugador profesional no está cansado.");
+        return false;
+    }
+
+    public void descansar(int minutos)
+    {
+        Console.WriteLine("El jugador profesional está descansando...");
+        minutosCorrer += minutos;
+        if (minutosCorrer > MaxMinutos)
+        {
+            minutosCorrer = MaxMinutos;
+        }
+    }
+}
 
 public class Program
 {
     public static void Main()
     {
-        Cronometro cronometro = new Cronometro(0, 0);
+        IJugador jugadorAmateur = new JugadorAmateur();
+        IJugador jugadorProfesional = new JugadorProfesional();
 
-        Console.WriteLine("Cronometro iniciado");
-        for (int i = 0; i < 5000; i++)
-        {
-            cronometro.IncrementarTiempo();
-            cronometro.MostrarTiempo();
-        }
+        Console.WriteLine("Jugador Amateur:");
+        jugadorAmateur.correr(15);
+        jugadorAmateur.cansado();
+        jugadorAmateur.descansar(10);
+        jugadorAmateur.correr(10);
+        jugadorAmateur.cansado();
+
+        Console.WriteLine("\nJugador Profesional:");
+        jugadorProfesional.correr(30);
+        jugadorProfesional.cansado();
+        jugadorProfesional.descansar(15);
+        jugadorProfesional.correr(20);
+        jugadorProfesional.cansado();
     }
 }
