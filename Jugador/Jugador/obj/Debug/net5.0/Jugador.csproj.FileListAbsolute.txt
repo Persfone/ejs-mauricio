@@ -1,0 +1,16 @@
+C:\Users\Punto Digital\source\repos\Jugador\Jugador\bin\Debug\net5.0\Jugador.exe
+C:\Users\Punto Digital\source\repos\Jugador\Jugador\bin\Debug\net5.0\Jugador.deps.json
+C:\Users\Punto Digital\source\repos\Jugador\Jugador\bin\Debug\net5.0\Jugador.runtimeconfig.json
+C:\Users\Punto Digital\source\repos\Jugador\Jugador\bin\Debug\net5.0\Jugador.runtimeconfig.dev.json
+C:\Users\Punto Digital\source\repos\Jugador\Jugador\bin\Debug\net5.0\Jugador.dll
+C:\Users\Punto Digital\source\repos\Jugador\Jugador\bin\Debug\net5.0\ref\Jugador.dll
+C:\Users\Punto Digital\source\repos\Jugador\Jugador\bin\Debug\net5.0\Jugador.pdb
+C:\Users\Punto Digital\source\repos\Jugador\Jugador\obj\Debug\net5.0\Jugador.csproj.AssemblyReference.cache
+C:\Users\Punto Digital\source\repos\Jugador\Jugador\obj\Debug\net5.0\Jugador.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Punto Digital\source\repos\Jugador\Jugador\obj\Debug\net5.0\Jugador.AssemblyInfoInputs.cache
+C:\Users\Punto Digital\source\repos\Jugador\Jugador\obj\Debug\net5.0\Jugador.AssemblyInfo.cs
+C:\Users\Punto Digital\source\repos\Jugador\Jugador\obj\Debug\net5.0\Jugador.csproj.CoreCompileInputs.cache
+C:\Users\Punto Digital\source\repos\Jugador\Jugador\obj\Debug\net5.0\Jugador.dll
+C:\Users\Punto Digital\source\repos\Jugador\Jugador\obj\Debug\net5.0\ref\Jugador.dll
+C:\Users\Punto Digital\source\repos\Jugador\Jugador\obj\Debug\net5.0\Jugador.pdb
+C:\Users\Punto Digital\source\repos\Jugador\Jugador\obj\Debug\net5.0\Jugador.genruntimeconfig.cache

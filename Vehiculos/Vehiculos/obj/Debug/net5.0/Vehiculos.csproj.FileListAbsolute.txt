@@ -1,0 +1,5 @@
+C:\Users\Punto Digital\source\repos\Vehiculos\Vehiculos\obj\Debug\net5.0\Vehiculos.csproj.AssemblyReference.cache
+C:\Users\Punto Digital\source\repos\Vehiculos\Vehiculos\obj\Debug\net5.0\Vehiculos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Punto Digital\source\repos\Vehiculos\Vehiculos\obj\Debug\net5.0\Vehiculos.AssemblyInfoInputs.cache
+C:\Users\Punto Digital\source\repos\Vehiculos\Vehiculos\obj\Debug\net5.0\Vehiculos.AssemblyInfo.cs
+C:\Users\Punto Digital\source\repos\Vehiculos\Vehiculos\obj\Debug\net5.0\Vehiculos.csproj.CoreCompileInputs.cache
