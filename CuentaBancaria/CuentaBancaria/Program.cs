@@ -81,7 +81,20 @@ namespace CuentaBancaria
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            CuentaBancaria cuenta1 = new CuentaBancaria("123456789", "Juan Perez", 1000.0);
+            CuentaBancaria cuenta2 = new CuentaBancaria("987654321", "Maria Lopez", 500.0);
+            Banco banco = new Banco();
+
+            Console.WriteLine("cuenta1 saldo: " + cuenta1.obtenerSaldo(cuenta1) + " cuenta2 saldo: " + cuenta2.obtenerSaldo(cuenta2));
+            cuenta1.modificarSaldo(cuenta1, 1500.0);
+            Console.WriteLine("cuenta1 saldo modificado: " + cuenta1.obtenerSaldo(cuenta1));
+            banco.Depositar(cuenta2, 200.0);
+            Console.WriteLine("cuenta2 saldo después del depósito: " + cuenta2.obtenerSaldo(cuenta2));
+            banco.Extraer(cuenta1, 300.0);
+            Console.WriteLine("cuenta1 saldo después de la extracción: " + cuenta1.obtenerSaldo(cuenta1));
+            banco.Transferir(cuenta1, cuenta2, 400.0);
+            Console.WriteLine("cuenta1 saldo después de la transferencia: " + cuenta1.obtenerSaldo(cuenta1));
+            Console.WriteLine("cuenta2 saldo después de la transferencia: " + cuenta2.obtenerSaldo(cuenta2));
         }
     }
 }

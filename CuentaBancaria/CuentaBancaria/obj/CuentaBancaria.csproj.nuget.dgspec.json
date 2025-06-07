@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Usuario\\source\\repos\\CuentaBancaria\\CuentaBancaria\\CuentaBancaria.csproj": {}
+    "C:\\Users\\Alexis\\source\\repos\\ejs-mauricio\\CuentaBancaria\\CuentaBancaria\\CuentaBancaria.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Usuario\\source\\repos\\CuentaBancaria\\CuentaBancaria\\CuentaBancaria.csproj": {
+    "C:\\Users\\Alexis\\source\\repos\\ejs-mauricio\\CuentaBancaria\\CuentaBancaria\\CuentaBancaria.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario\\source\\repos\\CuentaBancaria\\CuentaBancaria\\CuentaBancaria.csproj",
+        "projectUniqueName": "C:\\Users\\Alexis\\source\\repos\\ejs-mauricio\\CuentaBancaria\\CuentaBancaria\\CuentaBancaria.csproj",
         "projectName": "CuentaBancaria",
-        "projectPath": "C:\\Users\\Usuario\\source\\repos\\CuentaBancaria\\CuentaBancaria\\CuentaBancaria.csproj",
-        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario\\source\\repos\\CuentaBancaria\\CuentaBancaria\\obj\\",
+        "projectPath": "C:\\Users\\Alexis\\source\\repos\\ejs-mauricio\\CuentaBancaria\\CuentaBancaria\\CuentaBancaria.csproj",
+        "packagesPath": "C:\\Users\\Alexis\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Alexis\\source\\repos\\ejs-mauricio\\CuentaBancaria\\CuentaBancaria\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Alexis\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -44,7 +44,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net5.0": {
@@ -65,7 +65,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     }
